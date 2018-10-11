@@ -4,9 +4,7 @@ const knex = require('knex')(config);
 
 function getMotivation(testDb) {
   const connection = testDb || knex;
-  return connection('motivation')
-    .select()
-    .first();
+  return connection('motivation').select();
 }
 
 module.exports = {

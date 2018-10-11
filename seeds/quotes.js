@@ -3,9 +3,20 @@ exports.seed = function(knex, Promise) {
     .del()
     .then(function() {
       return knex('motivation').insert([
-        { id: 1, quote: "Rome wasn't built in a day" },
-        { id: 2, quote: "We're all in this together" },
-        { id: 3, quote: 'Xero is beatiful, just like you!' }
+        {
+          id: 1,
+          quote:
+            'In good teams the coach holds players accountable. In great teams the players hold each other accountable'
+        },
+        {
+          id: 2,
+          quote: 'Motivation gets you going, but dedication keeps you going'
+        },
+        { id: 3, quote: 'Your actions are the window to your values' },
+        {
+          id: 4,
+          quote: 'Optimism is the faith that leads to achievement'
+        }
       ]);
     });
 };
