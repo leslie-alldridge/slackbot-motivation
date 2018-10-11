@@ -14,13 +14,11 @@ server.get('/hi', (req, res) => {
 server.post('/', (req, res) => {
   dbFunctions.getMotivation().then(data => {
     let randomQuote = jsFunctions.random_item(data);
-    console.log(randomQuote);
     res.json(randomQuote.quote);
   });
 });
 
 server.post('/motivate', (req, res) => {
-  console.log(req.body.text);
   if (req.body.text == 'team') {
     res.json('Team motivation goes here');
   } else if (req.body.text == 'wellbeing') {
