@@ -1,15 +1,11 @@
 {
-  "name": "boilerplate-react-webpack",
-  "version": "0.2.1",
-  "description": "A webpack React starter",
-  "repository": "https://github.com/dev-academy-challenges/boilerplate-react-webpack.git",
+  "name": "boilerplate-react-redux",
+  "version": "0.2.0",
+  "description": "React Redux using express",
   "main": "server/index.js",
-  "author": "EDA",
-  "license": "ISC",
   "scripts": {
     "start": "webpack && node server",
-    "dev": "node server & webpack --watch",
-    "test": "jest --watchAll"
+    "dev": "nodemon --watch server & webpack --watch"
   },
   "babel": {
     "presets": [
@@ -27,6 +23,8 @@
   },
   "dependencies": {
     "express": "^4.16.2",
+    "nodemon": "^1.18.4",
+    "path": "^0.12.7",
     "superagent": "^3.8.3"
   },
   "devDependencies": {
