@@ -1,8 +1,12 @@
-# slackbot-motivation
+# Slackbot-Motivation
 
 My goal is to learn how Slack Bots are built and the API communication between Slack and a Web App. 
 
 I see glum faces at work and I hope this application is a way to help everyone keep their heads high and a smile on their dial. We work at Xero! We're all so lucky!
+
+## How does it work? 
+
+Users can enter Slack commands and receive motivation privately, within Slack!
 
 ## Personal Reflections
 Wow, I've learned a lot today. I feel as though Slack Bots were the complete unknown to me at lunch time, but looking back after investing three hours this evening, it's now known. 
