@@ -20,8 +20,14 @@ server.post('/', (req, res) => {
 });
 
 server.post('/motivate', (req, res) => {
-  console.log(req);
-  console.log(req.text);
+  console.log(req.body.text);
+  if (req.body.text == 'team') {
+    res.json('Team motivation goes here');
+  } else if (req.body.text == 'wellbeing') {
+    res.json('Wellbeing motivation goes here');
+  } else {
+    res.json('Please enter "team" or "wellbeing" for now, more coming soon!');
+  }
 });
 
 server.post('/help', (req, res) => {
