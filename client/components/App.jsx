@@ -1,63 +1,18 @@
-import React from 'react'
-import request from 'superagent'
+import React from 'react';
 
 class App extends React.Component {
-  constructor(props){
-  super(props)
+  constructor(props) {
+    super(props);
 
-  this.state = {
-    satellites: [],
-    satData: ''
+    this.state = {};
   }
-  this.clicker = this.clicker.bind(this)
-}
-
-componentDidMount(){
-  request.get('https://api.wheretheiss.at/v1/satellites')
-  .then((data) => {
-    this.setState({
-      satellites: data.body
-    })
-  })
-}
-
-clicker(id) {
-  request.get(`https://api.wheretheiss.at/v1/satellites/${id}`)
-  .then((data) => {
-    console.log(data);
-    
-    this.setState({
-      satData: data.body
-    })
-  })
-}
 
   render() {
-  return (
-    <div>
-      <h1>React development has begun!</h1>
-              {this.state.satellites.length > 0 && <ul> 
-                {this.state.satellites.map(sat => {
-                return <li key={sat.id}><button onClick={() => this.clicker(sat.id)}>{sat.name}</button></li>
-              })}
-    </ul>}
-    
-    {this.state.satData && 
+    return (
       <div>
-        
-         {this.state.satData.latitude}
-         
-         <p>
-         {this.state.satData.velocity} - kmph
-         </p>
-         
+        <h1>My job is to give you motivation!!!</h1>
       </div>
-    }
-    
-    </div>
-    
-  )
+    );
+  }
 }
-}
-export default App
-
+export default App;
