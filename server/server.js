@@ -18,4 +18,10 @@ server.post('/', (req, res) => {
   });
 });
 
+server.post('/help', (req, res) => {
+  let helpInfo =
+    'Please enter /motivateme to get a motivational quote. This is private and no one else can see who uses this app, or the response it sends. This is currently in development. Please contact leslie.alldridge@xero.com with any feedback, questions or quotes.';
+  res.json(helpInfo);
+});
+
 module.exports = server;
