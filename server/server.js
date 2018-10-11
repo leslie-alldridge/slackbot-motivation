@@ -5,6 +5,7 @@ const dbFunctions = require('./db/functions');
 const jsFunctions = require('./db/jsfunction');
 server.use(express.json());
 server.use(express.static(path.join(__dirname, '../public')));
+server.use(express.urlencoded({ extended: true }));
 
 server.get('/hi', (req, res) => {
   res.send('hi');
