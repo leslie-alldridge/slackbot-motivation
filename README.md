@@ -16,3 +16,7 @@ I managed to catch some staff that were still working and asked them to test it 
 I'm excited to present this to my boss tomorrow, learn more about Slack integrations (bots) and add more quotes to it as time goes on. 
 
 Deploying on the free plan to Heroku will present time out errors, I'm unsure how to handle those yet...but I'm thinking if there's enough demand company wide I'll pay the $7 for the upgraded plan to gain 24/7 uptime.
+
+### Feature Requests 
+- Image links 
+- Video URL with snippet e.g. 'person gives you motivation - www.motivate.com'
