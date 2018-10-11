@@ -20,9 +20,15 @@ server.post('/', (req, res) => {
 
 server.post('/motivate', (req, res) => {
   if (req.body.text == 'team') {
-    res.json('Team motivation goes here');
+    dbFunctions.getTeamMotivation().then(data => {
+      let randomQuote = jsFunctions.random_item(data);
+      res.json(randomQuote.quote);
+    });
   } else if (req.body.text == 'wellbeing') {
-    res.json('Wellbeing motivation goes here');
+    dbFunctions.getWellbeingMotivation().then(data => {
+      let randomQuote = jsFunctions.random_item(data);
+      res.json(randomQuote.quote);
+    });
   } else {
     res.json('Please enter "team" or "wellbeing" for now, more coming soon!');
   }

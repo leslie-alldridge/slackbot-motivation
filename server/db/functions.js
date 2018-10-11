@@ -7,6 +7,18 @@ function getMotivation(testDb) {
   return connection('motivation').select();
 }
 
+function getTeamMotivation(testDb) {
+  const connection = testDb || knex;
+  return connection('team').select();
+}
+
+function getWellbeingMotivation(testDb) {
+  const connection = testDb || knex;
+  return connection('wellbeing').select();
+}
+
 module.exports = {
-  getMotivation
+  getMotivation,
+  getTeamMotivation,
+  getWellbeingMotivation
 };
