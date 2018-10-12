@@ -34,7 +34,9 @@ server.post('/motivate', (req, res) => {
       res.json("Here's a special image I found for you " + randomQuote.quote);
     });
   } else {
-    res.json('Please enter "team" or "wellbeing" for now, more coming soon!');
+    res.json(
+      'Please enter "team", "wellbeing", "image" for now, more coming soon!'
+    );
   }
 });
 
