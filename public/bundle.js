@@ -21412,6 +21412,16 @@ var _superagent2 = _interopRequireDefault(_superagent);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+(function wakeup() {
+  console.log('in it');
+
+  (0, _superagent2.default)('get', 'https://young-springs-47463.herokuapp.com/', function (err) {
+    if (err) throw err;
+    console.log('Woke up!');
+    setTimeout(wakeup, 1740000); //29m
+  });
+})();
+
 var baseUrl = '/api/v1';
 
 function consume() {
