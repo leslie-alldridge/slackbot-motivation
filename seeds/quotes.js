@@ -17,7 +17,20 @@ exports.seed = function(knex, Promise) {
           id: 4,
           quote: 'Optimism is the faith that leads to achievement'
         },
-        {id: 5, quote: 'What a person has done with their life is history, but what a person creates with their life is a legacy'}
+        {
+          id: 5,
+          quote:
+            'What a person has done with their life is history, but what a person creates with their life is a legacy'
+        },
+        {
+          id: 6,
+          quote: "It always seems impossible until it's done."
+        },
+        {
+          id: 7,
+          quote:
+            'Failure will never overtake me if my determination to succeed is strong enough.'
+        }
       ]);
     });
 };
