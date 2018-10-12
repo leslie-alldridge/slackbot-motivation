@@ -7,7 +7,8 @@ class App extends React.Component {
 
     this.state = {
       secretinput: '',
-      formInput: ''
+      formInput: '',
+      lock: process.env.LOCK
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
