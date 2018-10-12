@@ -18,9 +18,9 @@ I'm excited to present this to my boss tomorrow, learn more about Slack integrat
 Deploying on the free plan to Heroku will present time out errors, I'm unsure how to handle those yet...but I'm thinking if there's enough demand company wide I'll pay the $7 for the upgraded plan to gain 24/7 uptime.
 
 ### Feature Requests 
-- Image links 
+- Image links - COMPLETED
 - Video URL with snippet e.g. 'person gives you motivation - www.motivate.com'
 
-Quote to add: People are like stained-glass windows. They sparkle and shine when the sun is out, but when the darkness sets in, their true beauty is revealed only if there is a light from within.
+## Quotes to add: 
 
-What a person has done with their life is history, but what a person creates with their life is a legacy
+
