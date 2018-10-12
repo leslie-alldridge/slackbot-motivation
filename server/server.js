@@ -28,7 +28,7 @@ server.post('/motivate', (req, res) => {
       let randomQuote = jsFunctions.random_item(data);
       res.json(randomQuote.quote);
     });
-  } else if (req.body.text == 'wellbeing') {
+  } else if (req.body.text == 'image') {
     dbFunctions.getImageMotivation().then(data => {
       let randomQuote = jsFunctions.random_item(data);
       res.json(randomQuote.quote);
