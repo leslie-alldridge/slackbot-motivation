@@ -13,7 +13,8 @@ exports.seed = function(knex, Promise) {
           quote:
             'Discouragement and failure are two of the surest stepping stones to success.'
         },
-        { id: 3, quote: 'Once you choose hope, anything’s possible.' }
+        { id: 3, quote: 'Once you choose hope, anything’s possible.' },
+        {id: 4, quote: 'People are like stained-glass windows. They sparkle and shine when the sun is out, but when the darkness sets in, their true beauty is revealed only if there is a light from within.'}
       ]);
     });
 };

@@ -16,7 +16,8 @@ exports.seed = function(knex, Promise) {
         {
           id: 4,
           quote: 'Optimism is the faith that leads to achievement'
-        }
+        },
+        {id: 5, quote: 'What a person has done with their life is history, but what a person creates with their life is a legacy'}
       ]);
     });
 };
