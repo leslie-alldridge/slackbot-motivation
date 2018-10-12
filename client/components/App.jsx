@@ -41,9 +41,16 @@ class App extends React.Component {
             </button>
           </form>
         )}
+        {this.props.state.form && <p>{this.props.state.form.outcome}</p>}
       </div>
     );
   }
+}
+
+function mapStateToProps(state) {
+  return {
+    state
+  };
 }
 
 function mapDispatchToProps(dispatch) {
@@ -53,7 +60,8 @@ function mapDispatchToProps(dispatch) {
     }
   };
 }
+
 export default connect(
-  null,
+  mapStateToProps,
   mapDispatchToProps
 )(App);

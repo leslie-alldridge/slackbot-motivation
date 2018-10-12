@@ -7,9 +7,15 @@ export function submitForm(form) {
       if (!response.ok) {
         console.log('error');
       } else {
-        console.log(response);
-        // dispatch(receiveAddBag(user, response.body.bag));
+        dispatch(savedForm(response.body));
       }
     });
+  };
+}
+
+function savedForm(result) {
+  return {
+    type: 'FORM_ADDED',
+    outcome: result
   };
 }

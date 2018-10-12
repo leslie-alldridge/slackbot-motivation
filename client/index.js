@@ -7,7 +7,13 @@ import thunk from 'redux-thunk';
 import reducers from './reducers';
 import App from './components/App';
 
-const store = createStore(reducers, compose(applyMiddleware(thunk)));
+const store = createStore(
+  reducers,
+  compose(
+    applyMiddleware(thunk),
+    window.devToolsExtension ? window.devToolsExtension() : f => f
+  )
+);
 
 document.addEventListener('DOMContentLoaded', () => {
   render(

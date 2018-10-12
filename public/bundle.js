@@ -2150,13 +2150,15 @@ var _reducers = __webpack_require__(64);
 
 var _reducers2 = _interopRequireDefault(_reducers);
 
-var _App = __webpack_require__(65);
+var _App = __webpack_require__(66);
 
 var _App2 = _interopRequireDefault(_App);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var store = (0, _redux.createStore)(_reducers2.default, (0, _redux.compose)((0, _redux.applyMiddleware)(_reduxThunk2.default)));
+var store = (0, _redux.createStore)(_reducers2.default, (0, _redux.compose)((0, _redux.applyMiddleware)(_reduxThunk2.default), window.devToolsExtension ? window.devToolsExtension() : function (f) {
+  return f;
+}));
 
 document.addEventListener('DOMContentLoaded', function () {
   (0, _reactDom.render)(_react2.default.createElement(
@@ -21205,10 +21207,43 @@ Object.defineProperty(exports, "__esModule", {
 
 var _redux = __webpack_require__(10);
 
-exports.default = (0, _redux.combineReducers)({});
+var _form = __webpack_require__(65);
+
+var _form2 = _interopRequireDefault(_form);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = (0, _redux.combineReducers)({
+  form: _form2.default
+});
 
 /***/ }),
 /* 65 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = form;
+function form() {
+  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
+  var action = arguments[1];
+
+  switch (action.type) {
+    case 'FORM_ADDED':
+      return {
+        outcome: action.outcome
+      };
+    default:
+      return state;
+  }
+}
+
+/***/ }),
+/* 66 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21226,7 +21261,7 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactRedux = __webpack_require__(17);
 
-var _form = __webpack_require__(66);
+var _form = __webpack_require__(67);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -21291,6 +21326,11 @@ var App = function (_React$Component) {
             { type: 'submit', value: 'submit' },
             'Submit'
           )
+        ),
+        this.props.state.form && _react2.default.createElement(
+          'p',
+          null,
+          this.props.state.form.outcome
         )
       );
     }
@@ -21299,6 +21339,12 @@ var App = function (_React$Component) {
   return App;
 }(_react2.default.Component);
 
+function mapStateToProps(state) {
+  return {
+    state: state
+  };
+}
+
 function mapDispatchToProps(dispatch) {
   return {
     submitForm: function submitForm(form) {
@@ -21306,11 +21352,12 @@ function mapDispatchToProps(dispatch) {
     }
   };
 }
-exports.default = (0, _reactRedux.connect)(null, mapDispatchToProps)(App);
+
+exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(App);
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 66 */
+/* 67 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21321,7 +21368,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.submitForm = submitForm;
 
-var _api = __webpack_require__(67);
+var _api = __webpack_require__(68);
 
 var _api2 = _interopRequireDefault(_api);
 
@@ -21334,15 +21381,21 @@ function submitForm(form) {
       if (!response.ok) {
         console.log('error');
       } else {
-        console.log(response);
-        // dispatch(receiveAddBag(user, response.body.bag));
+        dispatch(savedForm(response.body));
       }
     });
   };
 }
 
+function savedForm(result) {
+  return {
+    type: 'FORM_ADDED',
+    outcome: result
+  };
+}
+
 /***/ }),
-/* 67 */
+/* 68 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21353,7 +21406,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = consume;
 
-var _superagent = __webpack_require__(68);
+var _superagent = __webpack_require__(69);
 
 var _superagent2 = _interopRequireDefault(_superagent);
 
@@ -21379,7 +21432,7 @@ function consume() {
 }
 
 /***/ }),
-/* 68 */
+/* 69 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -21396,11 +21449,11 @@ if (typeof window !== 'undefined') { // Browser window
   root = this;
 }
 
-const Emitter = __webpack_require__(69);
-const RequestBase = __webpack_require__(70);
+const Emitter = __webpack_require__(70);
+const RequestBase = __webpack_require__(71);
 const isObject = __webpack_require__(25);
-const ResponseBase = __webpack_require__(71);
-const Agent = __webpack_require__(73);
+const ResponseBase = __webpack_require__(72);
+const Agent = __webpack_require__(74);
 
 /**
  * Noop.
@@ -22304,7 +22357,7 @@ request.put = (url, data, fn) => {
 
 
 /***/ }),
-/* 69 */
+/* 70 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -22473,7 +22526,7 @@ Emitter.prototype.hasListeners = function(event){
 
 
 /***/ }),
-/* 70 */
+/* 71 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23175,7 +23228,7 @@ RequestBase.prototype._setTimeouts = function() {
 
 
 /***/ }),
-/* 71 */
+/* 72 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23185,7 +23238,7 @@ RequestBase.prototype._setTimeouts = function() {
  * Module dependencies.
  */
 
-const utils = __webpack_require__(72);
+const utils = __webpack_require__(73);
 
 /**
  * Expose `ResponseBase`.
@@ -23318,7 +23371,7 @@ ResponseBase.prototype._setStatusProperties = function(status){
 
 
 /***/ }),
-/* 72 */
+/* 73 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23390,7 +23443,7 @@ exports.cleanHeader = (header, changesOrigin) => {
 
 
 /***/ }),
-/* 73 */
+/* 74 */
 /***/ (function(module, exports) {
 
 function Agent() {
