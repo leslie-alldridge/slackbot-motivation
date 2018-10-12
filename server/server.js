@@ -28,6 +28,11 @@ server.post('/motivate', (req, res) => {
       let randomQuote = jsFunctions.random_item(data);
       res.json(randomQuote.quote);
     });
+  } else if (req.body.text == 'wellbeing') {
+    dbFunctions.getImageMotivation().then(data => {
+      let randomQuote = jsFunctions.random_item(data);
+      res.json(randomQuote.quote);
+    });
   } else {
     res.json('Please enter "team" or "wellbeing" for now, more coming soon!');
   }

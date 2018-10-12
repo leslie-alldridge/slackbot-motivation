@@ -17,8 +17,14 @@ function getWellbeingMotivation(testDb) {
   return connection('wellbeing').select();
 }
 
+function getImageMotivation(testDb) {
+  const connection = testDb || knex;
+  return connection('images').select();
+}
+
 module.exports = {
   getMotivation,
   getTeamMotivation,
-  getWellbeingMotivation
+  getWellbeingMotivation,
+  getImageMotivation
 };
