@@ -8,7 +8,7 @@ const jsFunctions = require('./db/jsfunction');
 server.use(express.json());
 server.use(express.static(path.join(__dirname, '../public')));
 server.use(express.urlencoded({ extended: true }));
-server.use('/api/v1/', apiRoutes);
+server.use('/api/v1', apiRoutes);
 
 server.post('/', (req, res) => {
   dbFunctions.getMotivation().then(data => {

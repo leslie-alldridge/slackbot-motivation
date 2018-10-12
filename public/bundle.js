@@ -21247,7 +21247,7 @@ function form() {
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(process) {
+
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -21313,7 +21313,7 @@ var App = function (_React$Component) {
           'My job is to give you motivation!!!'
         ),
         _react2.default.createElement('input', { name: 'secretinput', onChange: this.handleChange, type: 'text' }),
-        this.state.input == process.env.LOCK && _react2.default.createElement(
+        this.state.secretinput == 'xerotohero' && _react2.default.createElement(
           'form',
           { onSubmit: this.handleSubmit },
           _react2.default.createElement('input', {
@@ -21354,7 +21354,6 @@ function mapDispatchToProps(dispatch) {
 }
 
 exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(App);
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
 /* 67 */
