@@ -22,3 +22,5 @@ Deploying on the free plan to Heroku will present time out errors, I'm unsure ho
 - Video URL with snippet e.g. 'person gives you motivation - www.motivate.com'
 
 Quote to add: People are like stained-glass windows. They sparkle and shine when the sun is out, but when the darkness sets in, their true beauty is revealed only if there is a light from within.
+
+What a person has done with their life is history, but what a person creates with their life is a legacy
