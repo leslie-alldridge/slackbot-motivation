@@ -7,8 +7,7 @@ class App extends React.Component {
 
     this.state = {
       secretinput: '',
-      formInput: '',
-      lock: process.env.LOCK
+      formInput: ''
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -30,7 +29,7 @@ class App extends React.Component {
       <div>
         <h1>My job is to give you motivation!!!</h1>
         <input name="secretinput" onChange={this.handleChange} type="text" />
-        {this.state.secretinput == process.env.LOCK && (
+        {this.state.secretinput == 'xerotohero' && (
           <form onSubmit={this.handleSubmit}>
             <input
               name="formInput"
