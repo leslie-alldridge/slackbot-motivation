@@ -29,7 +29,7 @@ class App extends React.Component {
       <div>
         <h1>My job is to give you motivation!!!</h1>
         <input name="secretinput" onChange={this.handleChange} type="text" />
-        {this.state.input == process.env.LOCK && (
+        {this.state.secretinput == process.env.LOCK && (
           <form onSubmit={this.handleSubmit}>
             <input
               name="formInput"
