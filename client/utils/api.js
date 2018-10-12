@@ -1,10 +1,7 @@
 import request from 'superagent';
 
 (function wakeup() {
-  console.log('in it');
-
-  request('get', 'https://young-springs-47463.herokuapp.com/', err => {
-    if (err) throw err;
+  request.get('https://young-springs-47463.herokuapp.com/help').then(res => {
     console.log('Woke up!');
     setTimeout(wakeup, 1740000); //29m
   });
