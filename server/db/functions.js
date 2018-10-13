@@ -24,7 +24,7 @@ function getImageMotivation(testDb) {
 
 function getVideoMotivation(testDb) {
   const connection = testDb || knex;
-  return connection('video').select();
+  return connection('videos').select();
 }
 
 module.exports = {
