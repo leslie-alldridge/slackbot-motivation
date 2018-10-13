@@ -22,9 +22,15 @@ function getImageMotivation(testDb) {
   return connection('images').select();
 }
 
+function getVideoMotivation(testDb) {
+  const connection = testDb || knex;
+  return connection('video').select();
+}
+
 module.exports = {
   getMotivation,
   getTeamMotivation,
   getWellbeingMotivation,
-  getImageMotivation
+  getImageMotivation,
+  getVideoMotivation
 };
