@@ -36,7 +36,7 @@ server.post('/motivate', (req, res) => {
   } else if (req.body.text == 'video') {
     dbFunctions.getVideoMotivation().then(data => {
       let randomQuote = jsFunctions.random_item(data);
-      res.json(randomQuote.snippet + '-' + randomQuote.video);
+      res.json(randomQuote.snippet + '" - ' + randomQuote.video);
     });
   } else {
     res.json(
