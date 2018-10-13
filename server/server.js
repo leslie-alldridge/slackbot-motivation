@@ -33,6 +33,11 @@ server.post('/motivate', (req, res) => {
       let randomQuote = jsFunctions.random_item(data);
       res.json("Here's a special image I found for you " + randomQuote.quote);
     });
+  } else if (req.body.text == 'video') {
+    dbFunctions.getImageMotivation().then(data => {
+      let randomQuote = jsFunctions.random_item(data);
+      res.json(randomQuote.snippet + '-' + randomQuote.video);
+    });
   } else {
     res.json(
       'Please enter "team", "wellbeing", "image" for now, more coming soon!'
