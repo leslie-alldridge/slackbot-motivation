@@ -19,7 +19,7 @@ Deploying on the free plan to Heroku will present time out errors, I'm unsure ho
 
 ### Feature Requests 
 - Image links - COMPLETED
-- Video URL with snippet e.g. 'person gives you motivation - www.motivate.com'
+- Video URL with snippet e.g. 'person gives you motivation - www.motivate.com' COMPLETED
 
 ## Quotes to add: 
 
