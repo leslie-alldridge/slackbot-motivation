@@ -31,22 +31,6 @@ Sitting down with my boss to see where we both see this bot going and asking for
 
 ## Quotes to add after proofreading
 
-Stay happy, stay humble! 
-
-The seeds of destruction lie in the roots of comparison
-
-What is uncomfortable now, will become comfortable later. 
-
-Define your normal
-
-Success isn’t found at the destination, But rather in the journey 
-
-Great things have never come from the comfort zone
-
-The past doesn’t determine the future
-
-Every day may not be good, but there is good in every day 
-
 If you want something you’ve never had, you must do something you’ve never done 
 
 Comparison is the destruction of joy
