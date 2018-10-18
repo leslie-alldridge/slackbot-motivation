@@ -102,3 +102,7 @@ aim to provide value in every interaction
 You are important 
 
 Display interest over intelligence 
+
+the squeaky wheel gets the oil 
+
+Learning is a journey not an event
