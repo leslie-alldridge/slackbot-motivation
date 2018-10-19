@@ -88,7 +88,7 @@ exports.seed = function(knex, Promise) {
         },
         {
           id: 21,
-          quote: 'A man without a smiling face must not open a shop.'
+          quote: 'A person without a smiling face must not open a shop.'
         },
         {
           id: 22,
