@@ -26,7 +26,7 @@ Deploying on the free plan to Heroku will present time out errors, I'm unsure ho
 
 ## Next steps
 
-Sitting down with my boss to see where we both see this bot going and asking for permission to send a form out to gather more data (quotes, links, etc)
+Send out a form asking for others to help contribute to the database
 
 
 ## Quotes to add after proofreading
