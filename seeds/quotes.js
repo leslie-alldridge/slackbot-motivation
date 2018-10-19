@@ -106,6 +106,126 @@ exports.seed = function(knex, Promise) {
         {
           id: 25,
           quote: 'The world is changed by your example not by your opinion.'
+        },
+        {
+          id: 26,
+          quote:
+            'Even a dead fish can float down stream, it takes a live one to go in the opposite direction.'
+        },
+        {
+          id: 27,
+          quote: 'Attract good people by being a good person.'
+        },
+        {
+          id: 28,
+          quote: 'Be transparent, be the same person 100% of the time.'
+        },
+        {
+          id: 29,
+          quote: 'Does your commitment live up to your dream.'
+        },
+        {
+          id: 30,
+          quote: 'How you think, is how you live.'
+        },
+        {
+          id: 31,
+          quote: 'Fear is a motivator not a captor.'
+        },
+        {
+          id: 32,
+          quote: 'Honesty leads to trust.'
+        },
+        {
+          id: 33,
+          quote: 'There is no “LOSE” only “WIN” or “LEARN”.'
+        },
+        {
+          id: 34,
+          quote: 'Self value - who are you? Not what do you do?'
+        },
+        {
+          id: 35,
+          quote: 'No body but you, writes the last chapter of your story.'
+        },
+        {
+          id: 36,
+          quote: 'Is it your best or your excuse.'
+        },
+        {
+          id: 37,
+          quote: 'The words we speak, create the world we live in.'
+        },
+        {
+          id: 38,
+          quote:
+            'A teacher will tell you what they know, a leader will show you what they know.'
+        },
+        {
+          id: 39,
+          quote:
+            'Are you willing to reduce your dream in life to the level of your fears.'
+        },
+        {
+          id: 40,
+          quote: 'The use of your life should outlast your life.'
+        },
+        {
+          id: 41,
+          quote: 'Doesn’t matter, get better.'
+        },
+        {
+          id: 42,
+          quote: 'The world is changed by your actions, not your opinions.'
+        },
+        {
+          id: 43,
+          quote: 'Values are displayed in action.'
+        },
+        {
+          id: 44,
+          quote:
+            'There are only two things one can control. Their attitude and their actions.'
+        },
+        {
+          id: 45,
+          quote: 'Aim to provide value in every interaction.'
+        },
+        {
+          id: 46,
+          quote: 'You are important.'
+        },
+        {
+          id: 47,
+          quote: 'Display interest over intelligence.'
+        },
+        {
+          id: 48,
+          quote: 'The squeaky wheel gets the oil.'
+        },
+        {
+          id: 49,
+          quote: 'Learning is a journey not an event.'
+        },
+        {
+          id: 50,
+          quote: 'You are a #champion.'
+        },
+        {
+          id: 51,
+          quote: 'You are #beautiful.'
+        },
+        {
+          id: 52,
+          quote: 'You are #human.'
+        },
+        {
+          id: 53,
+          quote: 'You will overcome the #challenge.'
+        },
+        {
+          id: 54,
+          quote: 'See it through to the end #ownership.'
         }
       ]);
     });
