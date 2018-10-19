@@ -31,19 +31,7 @@ Sitting down with my boss to see where we both see this bot going and asking for
 
 ## Quotes to add after proofreading
 
-Life’s not a game meant to be played by others rules 
 
-A man without a smiling face must not open a shop 
-
-You are what you speak 
-
-Motivation gets you going but dedication keeps you going 
-
-Ones actions are the window to ones valuers 
-
-Be thankful for who you are today, while working hard for who you want to be tomorrow 
-
-The world is changed by your example not by your opinion 
 
 Even a dead fish can float down stream, it takes a live one to go in the opposite direction 
 
