@@ -84,8 +84,28 @@ exports.seed = function(knex, Promise) {
         },
         {
           id: 20,
+          quote: 'Life’s not a game meant to be played by others rules.'
+        },
+        {
+          id: 21,
+          quote: 'A man without a smiling face must not open a shop.'
+        },
+        {
+          id: 22,
+          quote: 'You are what you speak.'
+        },
+        {
+          id: 23,
+          quote: 'Ones actions are the window to ones valuers.'
+        },
+        {
+          id: 24,
           quote:
-            'The expression one wears on ones face is far more important than the clothes one wears on ones back.'
+            'Be thankful for who you are today, while working hard for who you want to be tomorrow.'
+        },
+        {
+          id: 25,
+          quote: 'The world is changed by your example not by your opinion.'
         }
       ]);
     });
