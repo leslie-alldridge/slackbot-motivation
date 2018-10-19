@@ -31,16 +31,6 @@ Sitting down with my boss to see where we both see this bot going and asking for
 
 ## Quotes to add after proofreading
 
-If you want something you’ve never had, you must do something you’ve never done 
-
-Comparison is the destruction of joy
-
-“Perseverance is the hard work you do after you get tired of doing the hard work you have already done” ~ Newt Gingrich 
-
-If opportunity doesn’t knock, build a door
-
-The expression one wears on ones face is far more important than the clothes one wears on ones back
-
 Life’s not a game meant to be played by others rules 
 
 A man without a smiling face must not open a shop 
