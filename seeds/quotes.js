@@ -33,23 +33,19 @@ exports.seed = function(knex, Promise) {
         },
         {
           id: 8,
-          quote:
-            'Stay happy, stay humble!'
+          quote: 'Stay happy, stay humble!'
         },
         {
           id: 9,
-          quote:
-            'The seeds of destruction lie in the roots of comparison.'
+          quote: 'The seeds of destruction lie in the roots of comparison.'
         },
         {
           id: 10,
-          quote:
-            'Define your normal.'
+          quote: 'Define your normal.'
         },
         {
           id: 11,
-          quote:
-            'What is uncomfortable now, will become comfortable later.'
+          quote: 'What is uncomfortable now, will become comfortable later.'
         },
         {
           id: 12,
@@ -58,18 +54,38 @@ exports.seed = function(knex, Promise) {
         },
         {
           id: 13,
-          quote:
-            'Great things have never come from the comfort zone.'
+          quote: 'Great things have never come from the comfort zone.'
         },
         {
           id: 14,
-          quote:
-            'The past doesn’t determine the future.'
+          quote: 'The past doesn’t determine the future.'
         },
         {
           id: 15,
+          quote: 'Every day may not be good, but there is good in every day.'
+        },
+        {
+          id: 16,
           quote:
-            'Every day may not be good, but there is good in every day.'
+            'If you want something you’ve never had, you must do something you’ve never done.'
+        },
+        {
+          id: 17,
+          quote: 'Comparison is the destruction of joy.'
+        },
+        {
+          id: 18,
+          quote:
+            'Perseverance is the hard work you do after you get tired of doing the hard work you have already done ~ Newt Gingrich'
+        },
+        {
+          id: 19,
+          quote: 'If opportunity doesn’t knock, build a door.'
+        },
+        {
+          id: 20,
+          quote:
+            'The expression one wears on ones face is far more important than the clothes one wears on ones back.'
         }
       ]);
     });
