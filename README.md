@@ -21,14 +21,12 @@ Deploying on the free plan to Heroku will present time out errors, I'm unsure ho
 - Image links - COMPLETED
 - Video URL with snippet e.g. 'person gives you motivation - www.motivate.com' COMPLETED
 
-## Quotes to add: 
 
-
-## Next steps
+## Next steps (in progress)
 
 Send out a form asking for others to help contribute to the database
 
 
 ## Quotes to add after proofreading
-
+All quotes added 
 
